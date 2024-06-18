@@ -15,16 +15,25 @@
     </head>
     <body>
 
-    <h1> Hello, I'm Gentleman. </h1>
-    <img src = "https://manofmany.com/wp-content/uploads/2024/02/100-Ways-To-Be-A-Gentleman-5.jpg" width = "300"></img>
+    <h1 id = "Gentle"> Hello, I'm Gentleman. </h1>
+    <img src = "https://manofmany.com/wp-content/uploads/2024/02/100-Ways-To-Be-A-Gentleman-5.jpg" width = "300" id = "Man"></img>
     <h2> About me </h2>
         <p>  Im a <strong> coder </strong> that has learn HTML, CSS, ProcessingJS, and a bit of SQL</p>
         <p>  I also have other interests in cooking, handball, calisthenics, and music </p>
     <h2> Why do you code? </h2>
         <p> I find cool about the fact that i can create website and creations like these on my fingertips, basically just thinking what i want and making it into code. </p>
     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
         <script>
-            
+           $("#Gentle").css("color", "rgb(85, 21, 82)");
+           $("#Man").css("border", "ridge 10px black");
+
+           $("p").hide();
+           $("p").show(3000);
+
+           $("#Man").hide();
+           $("#Man").fadeIn();
 
         </script>
     </body>
